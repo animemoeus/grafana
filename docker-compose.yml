@@ -7,5 +7,7 @@ services:
       - "64444:3000"
     volumes:
       - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SERVER_ROOT_URL=https://grafana.animemoe.us
 volumes:
   grafana_data:
